@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>Protect Wildlife</title>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate icon" type="image/png" href="images/favicon.png">
+<link rel='icon' href='favicon.ico' type='image/x-ico' />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/default.min.css?t=227" />
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="lib/amazeui/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="lib/handlebars/handlebars.min.js"></script>
+<script type="text/javascript" src="lib/iscroll/iscroll-probe.js"></script>
+<script type="text/javascript" src="lib/amazeui/amazeui.min.js"></script>
+<script type="text/javascript" src="lib/raty/jquery.raty.js"></script>
+<script type="text/javascript" src="js/main.min.js?t=1"></script>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="width-center">
+            <div class="header-logo "><img src="images/logo.png" alt=""></div>
+            <div class="header-title div-inline">
+                <strong>Protect Wildlife</strong>
+                <span>保护野生动物，从我做起！</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav">
+        <button class="am-show-sm-only am-collapsed font f-btn" data-am-collapse="{target: '.header-nav'}">Menu <i
+                class="am-icon-bars"></i></button>
+        <nav>
+        <ul class="header-nav-ul am-collapse am-in">
+            <li class="on"><a href="index.html" name="index">网站首页</a></li>
+            <li><a href="about.html" name="about">关于我们</a></li>
+            <li><a href="news.html" name="show">有关新闻</a></li>
+            <li><a href="action.html" name="new">采取行动</a></li>
+            <li><a href="contact.html" name="message">联系我们</a>
+            <li><a href="new.html" name="message">结业报告</a>
+                <div class="secondary-menu">
+
+                    <ul><li><a href="message.html" class="message"></a></li></ul>
+                </div>
+            </li>
+        </ul>
+
+
+
+
+        </nav>
+    </div>
+
+</header>
+<section class="article-contents">
+    <h4>《通信软件开发与应用》课程结业报告</h4>
+    <main>
+        <p>一、开发内容</p>
+        <p>  本次课程结业任务我选择第一个任务：静态网站。可使用喜欢的任何CSS框架如BootStrap、MDB、tailwind等，页面不少于5个，最后一个页面放置结业报告的超链接。网站需部署到喜欢的托管服务器上如github等。
+            首先我开始想网页主题内容，根据老师所给的MDB模板结合网上搜索的内容，我选择了做关于保护野生动物的主题网页。有了主题，关于网页的框架也就搭建好了。关于HTML:网页基本都是用html语言写的，所以这个是最基本的。简单的网页布局比如div、p、table等标签都是必会的；DIV+CSS: HTML代码相当于网页的整体框架，那么CSS就相当于精装修了，CSS学的好网页实现起来会比较简单。现在最流行的HTML5+CSS3也是需要会的技能。
+            有了基本的思路和整体框架再结合老师平时所讲的知识和学习网站已经给好的框架，就可以开始开发自己的网页了。</p>
+        <p>二、开发过程<p>
+            <p>  HTML是构成 Web 世界的一砖一瓦。它定义了网页内容的含义和结构。除 HTML 以外的其它技术则通常用来描述一个网页的表现与展示效果（如 CSS），或功能与行为（如 JavaScript）。HTML 不是一门编程语言，而是一种用于定义内容结构的标记语言。在浏览器中看到的任何网页背后都是一个HTML文档，只要在网页上点击鼠标右键->查看源代码（用控制台工具也可）就可看到。建立文档的过程在学习网站上就可以得到。
+                关于页面的结构，先解压学习网站上的模板，用软件打开就可以得到文件基本结构，需要编写的就是结构板块。                                        
+                根据模块的框架结构，我建立了7个html文件，分别对应首页模块、关于我们模块、有关新闻模块、采取行动模块、联系我们模块、提交结业作业的超链接模块，最后一个就是关于地图的代码模块。
+                接着先根据模块编写导航条，仔细观察导航条代码, 会看到使用了一个nav标签, 其内部实际包含了三个部分:a 超链接, 用于展示公司名称或logo button按钮, 当在小尺寸屏幕时会出现、` 区块, 用于放置各个导航超链接。该标签内有一个 ul 无序列表(放置3个导航链接及1个下拉列表)和 form 表单(只有一个用于搜索的input).navbar-nav表明是导航条中的导航链接, 使得 li 的列表项不会分布于多行。在header标签里面，我添加了一个logo图和标题。再根据所给的模板修改导航标题即可。导航条能固定在页面顶部, 简单的添加.fixed-top类即可。
+                然后是页面主体main部分，先是主体部分。class 属性规定元素的类名（classname）。class 属性大多数时候用于指向样式表中的类（class）。不过，也可以利用它通过 JavaScript 来改变带有指定 class 的 HTML 元素。在添加标题后，我选择了 img 标签的src，它的属性是必需的。它的值是图像文件的 URL，也就是引用该图像的文件的的绝对路径或相对路径。我把所有的图像都保存在了images文件夹里面，如果需要出现图片，选用这个标签就可以。如果在图片下需要添加文字描述，选用标签 p 然后在中间添加相应的描述即可。
+                
+                最后是底部的部分。在html5开发使用footer标签时，把当作普通div标签对待即可，只不过一般用于网站底部布局。一般情况下一篇网页只有一个底部区，使用最好只使用一次footer即可，所以这里我只用了一次footer。这样一个关于保护野生动物首页的网页就做好了。
+                后面关于关于我们模块、有关新闻模块、采取行动模块、联系我们模块、提交结业作业的超链接模块和首页模块是类似的。关于地图的板块，一开始在学习网站上看到的复制过来好像有点问题，所以我在网上查找资料怎么写关于地图的代码。然后就找到了关于百度地图自动生成坐标的代码，于是我查看了代码，借鉴了一下，就成功了。</p>
+        <p>三、存在/解决问题<p>
+            <p>开发的过程看似简单，但是很漫长，中途会因为各种问题，导致网页的页面没有达到理想的效果。首先就是最简单的颜色搭配问题，可能很多人觉得颜色而已，随便选一个自己喜欢的颜色就行了，最开始我也是这样想的，后来根据保护动物主题，我选了一个亮眼的绿色后来发现与找到的图片并不搭配，改来改去还是选择了百搭的黑色。最终呈现出来的效果勉强让人满意，不过我总觉得还存在问题。所以说颜色搭配也是一门学问，颜色搭配看着顺眼的网页，往往更受浏览者的喜爱。其次就是设计板块部分。由于网上找到的关于保护野生动物的相关网页以及新闻挺多的，所以修改文字和图片方面挺简单的，但是我一开始想做到每个板块的主页的图片都能滑动。于是我想到了利用网站上的板块即图片轮播组件然后发现class="am-slides"就可以实现这个功能，最后修改自己想要的图片即可。还有许多小问题比如浏览器默认的margin值为8px，查询到解决办法： margin:0; h1~h6标签 自带外边距，查询到解决办法： margin:0;p段落标签 自带一个 字体的外边距，查询到解决办法：margin:0等等以上的问题都是通过学习网站或者网上查询到的。导航条一开始跟着页面浮动，后来查询到导航条能固定在页面顶部, 简单的添加.fixed-top类即可。本次网页设计还存在某些问题，比如地图部分的代码。根据模板写出来的代码运行不成功，所以这部分的代码是在网上查找到的，修改了坐标，发现能显示了，但是不太清晰，怎么改也不对，就没想到更好的办法了。还有就是颜色搭配不够好，这个网页不能够吸引到浏览者的目光，如果我是浏览者，我看到这个网页估计没有看下去的想法了，所以颜色和板块的分配还需要进一步学习。</p>
+        <p>四、总结<p>
+        <p>现在，计算机和网络已经深入到了我们生活中的方方面面，也已经成了生活中不可缺少的一部分，网络成了我们获取知识和信息的一种便捷工具，现在的网民也在不断的增多，所以，了解和学习网络知识是我们作为一名大学生迫切所需的。这学期除了在课上的时间，我还利用课余时间，对网页设计进行了初步的认识和了解，并基本掌握有关HTML、CSS的知识。
+            通过这次结业作业，我明白了网页是由背后无数代码组成的。看似一个简单的代码，但是通过各种标签的整合就会变成一个令人满意的网页。首先HTML是网页内容的载体。内容就是网页制作者放在页面上想要让用户浏览的信息，可以包含文字、图片、视频等。CSS样式是表现。就像网页的外衣。比如，标题字体、颜色变化，或为标题加入背景图片、边框等。所有这些用来改变内容外观的东西称之为表现。在课上学习了有关HTML、CSS相关知识后，再结合学习网站所给的模板，就很容易修改代码然后添加相关元素超链接等代码达到想要的结果。一开始确实感觉很简单，各种样式表有点让人看花眼，容易这个修改成那个，刷新一看网页就会发现不对，并且颜色的设置也是一种讲究。我选择的保护野生动物主题，一开始我认为应该是充满生机的颜色，就把导航改成了绿色，发现和找的图并不搭配，于是改了又改最终改成了百搭的黑色。并且为了方便，代码注释不仅方便程序员自己回忆起以前代码的用途，还可以帮助其他程序员很快的读懂程序的功能，方便多人合作开发网页代码。在写代码的时候，我用到最多的就是strong标签。有了段落又有了标题，现在如果想在一段话中特别强调某几个文字，这时候就可以用到strong标签。总之，通过这次结业作业，我明白了网页是由背后无数代码组成的。看似一个简单的代码，但是通过各种标签的整合就会变成一个令人满意的网页。这离不开每个程序员背后辛苦敲代码并且不断尝试的辛苦劳动，我做的网页还比较简单，希望以后能做出更精彩更让自己满意的网页。</p>
+    </main>
+</section>
+</div>
+<footer class="footer">
+    <div class="footer-pc">
+    <ul>
+        <li><p>网站首页 | 关于我们 | 有关新闻 | 采取行动 | 联系我们</p></li>
+        <li><p>地址：重庆市重庆交通大学</p></li>
+        <li><P>电话：12312312345</P></li>
+        <li><p>邮编：000000</p></li>
+    </ul>
+    </div>
+
+    <div class="footer-phone">
+        <button data-am-smooth-scroll class="am-btn am-btn-success">Top<i class="font">&#xe611;</i></button>
+    </div>
+</footer>
+</body>
+</html>
